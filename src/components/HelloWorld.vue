@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>
+      <money-time />
+    </h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -87,11 +89,13 @@
 </template>
 
 <script>
+import MoneyTime from "./MoneyTime.vue";
 export default {
+  components: { MoneyTime },
   name: "HelloWorld",
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
 

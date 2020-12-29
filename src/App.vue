@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Time is Money</h1>
+    <p>
+      This is a list of dates. They are calculated by substracting a certain
+      amount of seconds from the current date. This aids as a reminder how
+      absurdetily high the net worth of some human-beings is.
+    </p>
+    <money-time />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MoneyTime from "./components/MoneyTime.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
-  }
+    MoneyTime,
+  },
 };
 </script>
+MoneyTime
 
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 3em 2em 0 2em;
+  display: flex;
+  flex-direction: column;
+  money-time {
+    flex-grow: 1;
+  }
+}
+body {
+  margin: 0;
 }
 </style>
