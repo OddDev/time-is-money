@@ -13,7 +13,7 @@ export default {
   name: "DateListItem",
   props: {
     value: Number,
-    name: String,
+    name: String
   },
   computed: {
     dateValue: function() {
@@ -23,11 +23,11 @@ export default {
           day: "numeric",
           month: "long",
           year: "numeric",
-          era: "short",
+          era: "short"
         }
       );
-    },
-  },
+    }
+  }
 };
 </script>
 

@@ -94,8 +94,8 @@ export default {
   components: { MoneyTime },
   name: "HelloWorld",
   props: {
-    msg: String,
-  },
+    msg: String
+  }
 };
 </script>
 

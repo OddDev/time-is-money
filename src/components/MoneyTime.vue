@@ -30,22 +30,22 @@ export default {
         { value: 70000000, name: "Giannis Antetokounmpo" },
         { value: 100000000, name: "one-hundred million" },
         { value: 1000000000, name: "billion" },
-        { value: 1800000000, name: "GPP of Greenland" },
-      ],
+        { value: 1800000000, name: "GPP of Greenland" }
+      ]
     };
   },
   mounted() {
     axios
       .get("https://forbes400.herokuapp.com/api/forbes400?limit=3")
       .then(({ data }) => {
-        data.reverse().forEach((billionaire) =>
+        data.reverse().forEach(billionaire =>
           this.ranges.push({
             value: billionaire.finalWorth * 1000 * 1000,
-            name: billionaire.person.name,
+            name: billionaire.person.name
           })
         );
       });
-  },
+  }
 };
 </script>
 

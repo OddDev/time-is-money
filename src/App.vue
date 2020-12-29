@@ -16,8 +16,8 @@ import MoneyTime from "./components/MoneyTime.vue";
 export default {
   name: "App",
   components: {
-    MoneyTime,
-  },
+    MoneyTime
+  }
 };
 </script>
 MoneyTime
